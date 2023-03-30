@@ -53,27 +53,27 @@
     height: 60px;
     width: 16px;
     background: #fff;
-    animation: rects-fall 1.5s infinite;
+    animation: rects-fall 2s infinite;
 }
 
 .rects-falling div:nth-child(1) {
     left: 60px;
     background: #b827fc;
-    animation-delay: -0.24s;
+    animation-delay: 0;
 }
 
 /*this little div goes second*/
 .rects-falling div:nth-child(2) {
     left: 110px;
     background: #2c90fc;
-    animation-delay: -0.12s;
+    animation-delay: 0.25s;
 }
 
 /*this little div goes third*/
 .rects-falling div:nth-child(3) {
     left: 160px;
     background:  #b8fd33;
-    animation-delay: 0;
+    animation-delay: 0.5s;
 }
 
 @keyframes rects-cubed {
