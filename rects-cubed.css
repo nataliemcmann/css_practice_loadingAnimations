@@ -53,7 +53,7 @@
     height: 60px;
     width: 16px;
     background: #fff;
-    animation: rects-fall 2s infinite;
+    animation: rects-fall 1.5s infinite;
 }
 
 .rects-falling div:nth-child(1) {
