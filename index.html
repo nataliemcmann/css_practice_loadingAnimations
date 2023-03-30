@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="split-ring.css"/>
-    <link rel="stylesheet" href="squares-cubed.css"/>
+    <link rel="stylesheet" href="rects-cubed.css"/>
     <title>Document</title>
 </head>
 <style>
 
     body {
         background-color: #67a7b4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loader-container {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,14 +27,20 @@
 </style>
 <body>
 
-    <div class="split-ring"></div>
-    <div class="bicolor split-ring"></div>
-    <div class="rainbow split-ring"></div>
-
-    <div class="squares-cubed">
-        <div></div>
-        <div></div>
-        <div></div>
+    <h2>Spinning, Single Div Loaders</h2>
+    <div class="loader-container">
+        <div class="split-ring"></div> <!-- this is from loading.io -->
+        <div class="bicolor split-ring"></div>
+        <div class="rainbow split-ring"></div>
+    </div>
+    
+    <h2>Some Happy Rectangles</h2>
+    <div class="loader-container">
+        <div class="rects-cubed"> <!-- this is from loading.io -->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
 </body>

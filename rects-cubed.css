@@ -1,35 +1,35 @@
-.squares-cubed {
+.rects-cubed {
     display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
 }
 
-.squares-cubed div {
+.rects-cubed div {
     display: inline-block;
     position: absolute;
     left: 8px;
     width: 16px;
     background: #fff;
-    animation: squares-cubed 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation: rects-cubed 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 
-.squares-cubed div:nth-child(1) {
+.rects-cubed div:nth-child(1) {
     left: 8px;
     animation-delay: -0.24s;
 }
 
-.squares-cubed div:nth-child(2) {
+.rects-cubed div:nth-child(2) {
     left: 32px;
     animation-delay: -0.12s;
 }
 
-.squares-cubed div:nth-child(3) {
+.rects-cubed div:nth-child(3) {
     left: 56px;
     animation-delay: 0;
 }
 
-@keyframes squares-cubed {
+@keyframes rects-cubed {
     0% {
     top: 8px;
     height: 64px;

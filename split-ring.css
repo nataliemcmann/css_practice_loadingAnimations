@@ -13,16 +13,20 @@
     margin: 8px;
     border-radius: 50%;
     border: 10px solid #fff;
+    /* the border color transparenty is what makes it look like
+    two white curves rotating  👇🏼 */
     border-color: #fff transparent #fff transparent;
     animation: split-ring 2s linear infinite;
 }
 
+/*changing the transparent to a color for fun*/
 .bicolor:after{
     border-color: #fff #eeaeca #fff #eeaeca;
 }
 
 
-/* evidently, can't make a rainbow circle spinner */
+/* evidently, can't make a rainbow circle spinner
+but I tried so now it's a square */
 .rainbow:after {
     border: 10px solid transparent;
     border-width: 10px;
