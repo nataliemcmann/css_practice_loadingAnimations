@@ -36,7 +36,44 @@
 
 .all-together div{
     background: #4D5D53;
-    animation: rects-cubed 2s cubic-bezier(0, 1, 1, 1) infinite;
+    animation: rects-tall 2s cubic-bezier(0, 1, 1, 1) infinite;
+}
+
+.rects-falling {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 80px;
+}
+
+.rects-falling div{
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    height: 60px;
+    width: 16px;
+    background: #fff;
+    animation: rects-fall 2s infinite;
+}
+
+.rects-falling div:nth-child(1) {
+    left: 60px;
+    background: #b827fc;
+    animation-delay: -0.24s;
+}
+
+/*this little div goes second*/
+.rects-falling div:nth-child(2) {
+    left: 110px;
+    background: #2c90fc;
+    animation-delay: -0.12s;
+}
+
+/*this little div goes third*/
+.rects-falling div:nth-child(3) {
+    left: 160px;
+    background:  #b8fd33;
+    animation-delay: 0;
 }
 
 @keyframes rects-cubed {
@@ -47,5 +84,28 @@
     50%, 100% {
     top: 24px;
     height: 32px;
+    }
+}
+
+@keyframes rects-tall {
+    0% {
+    top: 10px;
+    height: 80px;
+    }
+    50%, 100% {
+    top: 26px;
+    height: 36px;
+    }
+}
+
+@keyframes rects-fall {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(-90deg);
     }
 }
