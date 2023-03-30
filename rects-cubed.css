@@ -11,22 +11,32 @@
     left: 8px;
     width: 16px;
     background: #fff;
+    /*the cubi-bezier function lets the top and bottom
+    of the rectangles extend and shrink*/
     animation: rects-cubed 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 
+/*this little div goes first*/
 .rects-cubed div:nth-child(1) {
     left: 8px;
     animation-delay: -0.24s;
 }
 
+/*this little div goes second*/
 .rects-cubed div:nth-child(2) {
     left: 32px;
     animation-delay: -0.12s;
 }
 
+/*this little div goes third*/
 .rects-cubed div:nth-child(3) {
     left: 56px;
     animation-delay: 0;
+}
+
+.all-together div{
+    background: #4D5D53;
+    animation: rects-cubed 2s cubic-bezier(0, 1, 1, 1) infinite;
 }
 
 @keyframes rects-cubed {
