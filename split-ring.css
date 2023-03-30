@@ -16,6 +16,20 @@
     animation: split-ring 2s linear infinite;
 }
 
+.bicolor:after{
+    border-color: #fff #eeaeca #fff #eeaeca;
+}
+
+
+/* evidently, can't make a rainbow circle spinner */
+.rainbow:after {
+    border: 10px solid transparent;
+    border-width: 10px;
+    z-index: -1;
+    border-image: 
+    linear-gradient(to bottom right, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892) 1;
+}
+
 @keyframes split-ring {
 0% {
     transform: rotate(0deg);
