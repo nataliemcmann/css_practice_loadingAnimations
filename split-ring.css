@@ -1,0 +1,26 @@
+.split-ring {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.split-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: split-ring 2s linear infinite;
+}
+
+@keyframes split-ring {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
